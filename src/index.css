@@ -28,6 +28,7 @@ code {
    width:100%;
    display: flex;
    justify-content:center;
+   margin-top:10px;
 }
 .addItem input{
     width:80%;
