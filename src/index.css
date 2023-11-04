@@ -5,9 +5,106 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin:2px;
+  background:yellow;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+::-webkit-scrollbar{
+  display:none;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  transition:.4s;
+}
+.addItem{
+   width:100%;
+   display: flex;
+   justify-content:center;
+}
+.addItem input{
+    width:80%;
+    padding:5px;
+}
+.addItem button{
+  width:10%;
+}
+
+.todos{
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+  margin-top:10px;
+  border:1px solid black;
+  padding:10px;
+  border-radius:8px;
+  background:aqua;
+}
+
+.todo{
+  width:100%;
+  border:1px solid black;
+  border-radius:6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;;
+  padding: 5px 10px;
+  background:gray;
+  color:white;
+  overflow:scroll;
+  position:relative;
+}
+
+.todo div{
+  display: flex;
+  gap:15px;
+  align-items: center;
+
+}
+
+.todo div input{
+  transform: scale(1.5);
+}
+
+.todo div span{
+  font-size:30px;
+}
+
+.todo button{
+  position:absolute;
+  right:0;
+  padding:0px 10px;
+  height:100%;
+}
+
+.error{
+  display: block;;
+  width:100%;
+  text-align: center;
+  color:red;
+}
+
+.wrapper{
+  border:2px solid black;
+  border-radius:10px;
+  position:absolute;
+  top:20%;
+  left:50%;
+  transform:translate(-50%,0%);
+  width:80%;
+  padding:20px;
+  box-shadow:2px 5px 5px rgba(0,0,0,.1);
+}
+
+.wrapper:hover{
+  top:19%;
+  left:49.8%;
+  box-shadow:2px 5px 5px rgba(0,0,0,.6);
 }
