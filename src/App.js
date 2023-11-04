@@ -43,6 +43,7 @@ export default function App(){
 
     return <userContext.Provider value={{todos,setTodos,handleCheckChange,handleDelete,addItem,error}}>
           <div className="wrapper">
+            <h1 style={{textAlign:"center"}}>Todos</h1>
             <AddItem/>
             <Todos/>
           </div>
